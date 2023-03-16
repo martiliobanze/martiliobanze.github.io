@@ -4,6 +4,42 @@
     <meta charset="UTF-8">
     <title>Martilio Rafael Banze</title>
     <style>
+      /* Cores do tema de astrofísica */
+      :root {
+        --cor-fundo: #0D0221;
+        --cor-principal: #FDB813;
+        --cor-secundaria: #FFE9A1;
+        --cor-texto: #FFFFFF;
+      }
+      
+      body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--cor-principal);
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+      }
+      
+      a {
+        color: var(--cor-secundaria);
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: var(--cor-principal);
+      }
+
       figure {
         display: flex;
         flex-direction: column;
@@ -24,7 +60,8 @@
       nav {
         display: flex;
         justify-content: center;
-        background-color: #f2f2f2;
+        background-color: var(--cor-principal);
+        padding: 10px;
       }
 
       nav ul {
@@ -42,11 +79,16 @@
         display: block;
         padding: 10px;
         text-decoration: none;
-        color: #333;
+        color: var(--cor-texto);
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
       }
 
       nav a:hover {
-        background-color: #ddd;
+        background-color: var(--cor-secundaria);
+        color: var(--cor-principal);
       }
     </style>
   </head>
@@ -113,7 +155,7 @@
     
     <figure>
       <img src="Site.jpg" alt="Martilio Rafael Banze, NRF-Pretoria, RSA">
-      <figcaption>Martílio Rafael Banze, NRF-Pretoria, RSA</figcaption>
+      <figcaption>Martilio Rafael Banze, NRF-Pretoria, RSA</figcaption>
     </figure>
     
     <a href="meu-curriculo.pdf" target="_blank">Download my CV in PDF</a>
