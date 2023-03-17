@@ -118,11 +118,54 @@
     <p>I have worked as a support scientist for the national academic and research community and have a background in data science. I have experience in Python, Matlab and also in the WRF Model.</p>
 
     <!-- Seção de events -->
+    
     <section id="events">
       <h2>Events</h2>
       <p>Here you can find information about my past and upcoming events.</p>
-      <!-- Aqui você pode adicionar uma lista de eventos -->
+      <div class="event-list">
+        <div class="event-item">
+          <img id="event-img" src="event1.png" alt="Tutor in the DARA Project">
+          <h3>Event 1</h3>
+          <p id="event-description">HPC.</p>
+        </div>
+      </div>
     </section>
+    
+    <script>
+      var imgIndex = 1;
+      var eventImg = document.getElementById("event-img");
+      var eventDescription = document.getElementById("event-description");
+      var events = [
+        {
+          imgSrc: "event1.png",
+          imgAlt: "Tutor in the DARA Project",
+          description: "HPC"
+        },
+        {
+          imgSrc: "event2.png",
+          imgAlt: "2019 DARA Student at HartRAO",
+          description: "Basic training in Radio Astronomy, Astrophysics and computing."
+        },
+        {
+          imgSrc: "event3.jpg",
+          imgAlt: "One of the main tutor",
+          description: "One of the main tutor-INAGE/MoRENet|HPC."
+        }
+      ];
+    
+      function changeImage() {
+        eventImg.src = events[imgIndex].imgSrc;
+        eventImg.alt = events[imgIndex].imgAlt;
+        eventDescription.innerText = events[imgIndex].description;
+        imgIndex++;
+        if (imgIndex >= events.length) {
+          imgIndex = 0;
+        }
+      }
+    
+      setInterval(changeImage, 5000);
+    </script>
+
 
     <!-- Seção de trainings -->
     <section id="trainings">
