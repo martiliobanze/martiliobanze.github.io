@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Martilio Rafael Banze</title>
+    <style>
+      /* Cores do tema de astrofísica */
+      :root {
+        --cor-fundo: #0D0221;
+        --cor-principal: #FDB813;
+        --cor-secundaria: #FFE9A1;
+        --cor-texto: #FFFFFF;
+      }
+      
+      body {
+        background-color: var(--cor-fundo);
+        color: var(--cor-texto);
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      
+      h1, h2, h3, h4, h5, h6 {
+        color: var(--cor-principal);
+        font-family: 'Helvetica Neue', sans-serif;
+        font-weight: bold;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+      }
+      
+      a {
+        color: var(--cor-secundaria);
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: var(--cor-principal);
+      }
+
+      figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      figure img {
+        width: 300px;
+        height: 500px;
+        margin-bottom: 10px;
+      }
+
+      figure figcaption {
+        text-align: center;
+      }
+
+      /* Estilo para a barra de navegação */
+      nav {
+        display: flex;
+        justify-content: center;
+        background-color: var(--cor-principal);
+        padding: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin: 0 10px;
+      }
+
+      nav a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: var(--cor-texto);
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      nav a:hover {
+        background-color: var(--cor-secundaria);
+        color: var(--cor-principal);
+      }
+    </style>
+  </head>
+
+  <body>
+      <!-- Cabeçalho -->
+    <header>
+      <img src="perfil.jpg" alt="Martilio Banze, Lab UEM" width="100" height="130" >
+    </header>
+    <!-- Barra de navegação -->
+    <nav>
+      <ul>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#trainings">Trainings</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#researchs">Researchs</a></li>
+      </ul>
+    </nav>
+
+    <h1>Martilio Rafael Banze</h1>
+
+    <p>Hello, my name is Martilio, I am a researcher in physics with an emphasis on the Use of High Performance Computing to Solve Physics Problems. My goal is to contribute to the understanding of physical phenomena (Quantum Mechanics, environmental phenomena, etc) and improve technologies that can help solve challenges in industry and the world at large.</p>
+
+
+    <p>I have a degree in Meteorology from Eduardo Mondlane University and in Physics and Mathematics from the Pedagogical University of Maputo. I am currently a High Performance Computing Administrator at the National Institute of Electronic Government, Public Institute (INAGE, IP)/MoRENet (Mozambique Research and Education Network).</p>
+    <p>I have worked as a support scientist for the national academic and research community and have a background in data science. I have experience in Python, Matlab and also in the WRF Model.</p>
+
+    <!-- Seção de events -->
+    
+    <section id="events">
+      <h2>Events</h2>
+      <p>Here you can find information about my past and upcoming events.</p>
+      <div class="event-list">
+        <div class="event-item">
+          <img id="event-img" src="event1.png" alt="Tutor in the DARA Project">
+          <h3>Event 1</h3>
+          <p id="event-description">HPC.</p>
+        </div>
+      </div>
+    </section>
+    
+    <script>
+      var imgIndex = 1;
+      var eventImg = document.getElementById("event-img");
+      var eventDescription = document.getElementById("event-description");
+      var events = [
+        {
+          imgSrc: "event1.png",
+          imgAlt: "Tutor in the DARA Project",
+          description: "HPC"
+        },
+        {
+          imgSrc: "event2.png",
+          imgAlt: "2019 DARA Student at HartRAO",
+          description: "Basic training in Radio Astronomy, Astrophysics and computing."
+        },
+        {
+          imgSrc: "event3.jpg",
+          imgAlt: "One of the main tutor",
+          description: "One of the main tutor-INAGE/MoRENet|HPC."
+        }
+      ];
+    
+      function changeImage() {
+        eventImg.src = events[imgIndex].imgSrc;
+        eventImg.alt = events[imgIndex].imgAlt;
+        eventDescription.innerText = events[imgIndex].description;
+        imgIndex++;
+        if (imgIndex >= events.length) {
+          imgIndex = 0;
+        }
+      }
+    
+      setInterval(changeImage, 6000);
+    </script>
+
+
+    <!-- Seção de trainings -->
+    <section id="trainings">
+      <h2>Trainings</h2>
+      <p>Here you can find information about my trainings.</p>
+      <!-- Aqui você pode adicionar uma lista de treinamentos -->
+    </section>
+
+    
+    <!-- Seção de certificados -->
+    <section id="certificates">
+      <h2>Certificates</h2>
+      <p>Here you can find information about my certificates.</p>
+      <ul>
+        <li><a href="UEM.pdf" target="_blank">1-UEM</a></li>
+	<li><a href="Transcript_UP.pdf" target="_blank">1-UEM</a></li>
+        <li><a href="Astrophysics and Space Science.pdf" target="_blank">1-Astrophysics and Space Science</a></li>
+        <li><a href="Big Data.pdf" target="_blank">3-Big Data</a></li>
+        <li><a href="Linux & Python.pdf" target="_blank">4-Linux & Python</a></li>
+	<li><a href="HPC.pdf" target="_blank">1-UEM</a></li>
+	<li><a href="certificado_rnp.pdf" target="_blank">1-UEM</a></li>
+	<li><a href="Climate Change_Yali.pdf" target="_blank">1-UEM</a></li>
+        <li><a href="ArcGIS.pdf" target="_blank">5-ArcGIS</a></li>
+        <li><a href="Tsunamis.pdf" target="_blank">6-Tsunamis</a></li>
+        <li><a href="Micro-Informatic.pdf" target="_blank">7-Micro-Informatic</a></li>
+        <li><a href="Climate Change.pdf" target="_blank">8-Climate Change</a></li>
+        
+      </ul>
+    </section>
+
+      <!-- Aqui você pode adicionar uma lista de certificados -->
+    <!-- Seção de habilidades -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <p>Here you can find information about my skills.</p>
+      <ul>
+        <li>High Performance Computing</li>
+        <li>Quantum Mechanics</li>
+        <li>Data Science</li>
+        <li>Python</li>
+        <li>Matlab</li>
+        <li>HTML</li
+        <li>GraDS</li>
+        <li>Java script</li>
+        <li>WRF Model</li>
+      </ul>
+    </section>
+    
+    <!-- Seção de pesquisa -->
+    <section id="researchs">
+      <h2>Researchs</h2>
+      <p>Here you can find information about my researchs.</p>
+      <ul>
+        <li><a href="Linux_Manual_Parte1.pdf" target="_blank">Linux_Manual_Parte1</a></li>
+        <li><a href="Condutibilidade Hidraulica.pdf" target="_blank">Condutibilidade Hidraulica</a></li>
+        <li><a href="Shell_Bash_Banze.pdf" target="_blank">Shell_Bash_Banze</a></li>
+        <li><a href="Leis de Conservacao1.pdf" target="_blank">Electrodinamica</a></li>
+        <li><a href="Teste1_Banze.pdf" target="_blank">Teste de Introducao a Fisica Moderna</a></li>
+        <li><a href="Clarificando a Frase de Einstein_Banze.pdf" target="_blank">Explicando a Frase de Einstein_Banze</a></li>
+        <li><a href="Projecto DEA.pdf" target="_blank">Projecto baseado na Monografia UEM</a></li>
+        
+      </ul>
+      <!-- Aqui você pode adicionar informações sobre suas pesquisas -->
+    </section>
+    
+    <figure>
+      <img src="Site.jpg" alt="Martilio Rafael Banze, NRF-Pretoria, RSA">
+      <figcaption>Martilio Rafael Banze, NRF-Pretoria, RSA</figcaption>
+    </figure>
+    
+    <a href="Banze_Resume.pdf" target="_blank">Download my CV in PDF</a>
+  </body>
+</html>
+
+    
+      
