@@ -1,76 +1,141 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Martílio Rafael Banze — Sítio Oficial</title>
+  <title>Martilio R. Banze — Official Website</title>
   <link rel="stylesheet" href="https://cloudflare.com">
   <style>
     body { padding: 40px 20px; background-color: #fdfdfd; }
     header { text-align: center; margin-bottom: 50px; border-bottom: 2px solid #003366; padding-bottom: 30px; }
     h1 { color: #003366; margin-bottom: 10px; }
     h2 { color: #003366; border-left: 4px solid #003366; padding-left: 10px; margin-top: 40px; }
+    h3 { color: #004488; margin-top: 20px; }
     .subtitle { font-size: 1.2rem; color: #555; font-style: italic; }
     .contact-info { background-color: #f4f6f9; padding: 20px; border-radius: 6px; border: 1px solid #d1d5db; }
-    .cv-container { display: flex; gap: 15px; margin-top: 15px; }
+    .cv-container { display: flex; gap: 15px; margin-top: 15px; flex-wrap: wrap; }
     .cv-btn { background-color: #003366; color: white; padding: 12px 24px; text-decoration: none; border-radius: 5px; font-weight: bold; display: inline-block; }
-    .cv-btn-en { background-color: #4a5568; }
+    .cv-btn-pt { background-color: #4a5568; }
     .doc-link { text-decoration: none; font-weight: 500; }
+    .grid-custom { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+    .card-custom { border: 1px solid #e2e8f0; padding: 20px; border-radius: 6px; background: white; }
+    .tag { display: inline-block; background: #e2e8f0; color: #1a202c; padding: 2px 8px; border-radius: 4px; font-size: 0.85rem; margin: 2px; }
   </style>
 </head>
 <body class="container">
 
   <header>
-    <h1>Martílio Rafael Banze</h1>
-    <p class="subtitle">Administrador de Computação de Alto Desempenho (HPC) & Investigador em Física</p>
+    <h1>Martilio R. Banze</h1>
+    <p class="subtitle">HPC Ecosystems Administrator & Data Scientist</p>
   </header>
 
   <main>
-    <section id="about">
-      <h2>Sobre Mim</h2>
-      <p>Olá, o meu nome é Martílio, sou um investigador em física com ênfase no uso de Computação de Alto Desempenho para resolver problemas de física. O meu objectivo é contribuir para a compreensão de fenómenos físicos (Mecânica Quântica, fenómenos ambientais, etc.) e melhorar tecnologias que possam ajudar a resolver desafios na indústria e no mundo em geral.</p>
-      <p>Sou licenciado em Meteorologia pela Universidade Eduardo Mondlane (UEM) e em Física e Matemática pela Universidade Pedagógica de Maputo (UPM). Actualmente, exerço a função de Administrador de Computação de Alto Desempenho no Instituto Nacional de Governo Electrónico, Instituto Público (INAGE, IP) / MoRENet (Mozambique Research and Education Network).</p>
-      <p>Tenho experiência de trabalho como cientista de suporte para a comunidade académica e de investigação nacional, com forte base em ciência de dados, Python, Matlab e no Modelo WRF.</p>
+    <!-- PROFILE SECTION -->
+    <section id="profile">
+      <h2>Professional Profile</h2>
+      <p>I am an experienced <strong>HPC Ecosystems Administrator and Data Scientist</strong>, specializing in the management, configuration, and optimization of High-Performance Computing infrastructures. Expert in cluster administration tools including SLURM, PBS Pro, MPI, Warewulf, and OpenHPC, I excel at structuring resources for intensive computing workloads. Concurrently, I apply Python in Machine Learning frameworks and Big Data environments to engineer scalable data processing solutions.</p>
     </section>
 
-    <section id="certificates">
-      <h2>Certificados e Formações</h2>
+    <!-- WORK EXPERIENCE SECTION -->
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      
+      <div class="card-custom" style="margin-bottom: 20px;">
+        <strong>HPC Systems Administrator</strong> <span style="float: right; color: #777;">2022 - Current</span>
+        <br><em style="color: #003366;">MCTD / MoRENet, Maputo</em>
+        <p style="margin-top: 10px;">Managing, configuring, and optimizing national high-performance computing frameworks to support academic and scientific research initiatives across Mozambique.</p>
+      </div>
+
+      <div class="card-custom" style="margin-bottom: 20px;">
+        <strong>HPC Tutor</strong> <span style="float: right; color: #777;">May 2021</span>
+        <br><em style="color: #003366;">Eduardo Mondlane University (UEM), Maputo</em>
+        <p style="margin-top: 10px;">Conducted an intensive introductory training program under the DARA Project, explicitly focusing on teaching Linux (Shell Scripting) and Python architectures applied to Astrophysics and Space Sciences.</p>
+      </div>
+
+      <div class="card-custom" style="margin-bottom: 20px;">
+        <strong>Information Officer</strong> <span style="float: right; color: #777;">2018 - 2021</span>
+        <br><em style="color: #003366;">National Institute for Disaster Management and Risk Reduction (INGD), Maputo</em>
+        <p style="margin-top: 10px;">Maintained and managed the central CENOE database pipelines, building advanced data analysis structures and automated data visualization applications.</p>
+      </div>
+
+      <div class="card-custom">
+        <strong>Asset Manager</strong> <span style="float: right; color: #777;">2016 - 2017</span>
+        <br><em style="color: #003366;">Movitel, SA, Matola</em>
+        <p style="margin-top: 10px;">Monitored, controlled, and audited enterprise technical assets, infrastructure hardware status logs, and regional office hardware layers.</p>
+      </div>
+    </section>
+
+    <!-- EDUCATION SECTION -->
+    <section id="education">
+      <h2>Education</h2>
       <ul>
-        <li>📄 <a class="doc-link" href="Applied_Data_Science_Lab.pdf" target="_blank">Applied Data Science Lab</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Astrophysics and Space Science.pdf" target="_blank">Astrophysics and Space Science</a> [5]</li>
-        <li>📄 <a class="doc-link" href="B.Sc-UEM.pdf" target="_blank">B.Sc - UEM</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Big Data.pdf" target="_blank">Big Data</a></li>
-        <li>📄 <a class="doc-link" href="Certificate_UEM.pdf" target="_blank">Certificate UEM</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Certificate of Attendace_Geophysics.pdf" target="_blank">Certificate of Attendance - Geophysics</a> [5]</li>
-        <li>📄 <a class="doc-link" href="HPC.pdf" target="_blank">High Performance Computing (HPC)</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Huawei Mozambique ICT Government Staff Training 2025.pdf" target="_blank">Huawei Mozambique ICT Government Staff Training 2025</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Linux.pdf" target="_blank">Linux</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Linux & Python.pdf" target="_blank">Linux & Python</a> [5]</li>
-        <li>📄 <a class="doc-link" href="TCP_IP.pdf" target="_blank">TCP/IP</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Transcript_UEM.pdf" target="_blank">Transcript UEM</a> [5]</li>
-        <li>📄 <a class="doc-link" href="Transcript_UP.pdf" target="_blank">Transcript UP</a> [5]</li>
+        <li><strong>Bachelor's Degree in Physics and Mathematics Education</strong> (2018 - 2023) <br> Pedagogical University (UPM), Faculty of Natural Sciences and Mathematics, Maputo.</li>
+        <li><strong>Bachelor's Degree in Meteorology</strong> (2013 - 2018) <br> Eduardo Mondlane University (UEM), Faculty of Sciences, Maputo.</li>
       </ul>
     </section>
 
-    <section id="contact">
-      <h2>Contacto Profissional</h2>
-      <div class="contact-info">
-        <p><strong>Correio Electrónico:</strong> <a href="mailto:martiliobanze@gmail.com">martiliobanze@gmail.com</a></p>
-        <p><strong>Contactos Telefónicos:</strong> +258 844330181 | +258 861010333</p>
-        <p><strong>Localização:</strong> Província de Maputo, Cidade da Matola, Moçambique</p>
-        
-        <p style="margin-top: 20px; margin-bottom: 5px;"><strong>Descarregar Currículo (CV):</strong></p>
-        <div class="cv-container">
-          <a class="cv-btn" href="meu_curriculo_PT.pdf" target="_blank">📄 Versão Português (PT)</a> [5]
-          <a class="cv-btn cv-btn-en" href="meu_curriculo_EN.pdf" target="_blank">🌍 Versão Inglês (EN)</a> [5]
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills">
+      <h2>Technical Ecosystem</h2>
+      <div class="grid-custom">
+        <div class="card-custom">
+          <strong>HPC Tools & Infrastructure</strong><br>
+          <span class="tag">OpenHPC</span> <span class="tag">Warewulf</span> <span class="tag">SLURM</span> 
+          <span class="tag">PBSPro</span> <span class="tag">Ganglia/Nagios</span> <span class="tag">Docker/Singularity</span>
+        </div>
+        <div class="card-custom">
+          <strong>Programming & Data Science</strong><br>
+          <span class="tag">Anaconda/Python</span> <span class="tag">QGIS</span> <span class="tag">Oracle SQL</span> 
+          <span class="tag">WRF Model</span> <span class="tag">Matlab</span> <span class="tag">R / C++ / Fortran</span>
+        </div>
+        <div class="card-custom">
+          <strong>Networking & Web</strong><br>
+          <span class="tag">TCP/IP</span> <span class="tag">Infiniband</span> <span class="tag">Linux/Unix</span> 
+          <span class="tag">HTML5 & JavaScript</span> <span class="tag">Apache Tomcat</span>
         </div>
       </div>
     </section>
-  </main>
 
-  <footer style="text-align: center; margin-top: 60px; color: #777; font-size: 0.9rem;">
-    <p>&copy; 2026 Martílio Rafael Banze. Todos os direitos reservados.</p>
-  </footer>
+    <!-- CONFERENCES SECTION -->
+    <section id="conferences">
+      <h2>Conferences & Speaker Engagements</h2>
+      <ul>
+        <li><strong>International Conference on HPC - SC25 (St. Louis, USA)</strong> <span style="color:#777;">Nov 2025</span><br>Invited Guest Speaker presenting on MoRENet's HPC Infrastructure and its core acceleration of national scientific research.</li>
+        <li><strong>AI for Climate Services and Environmental Applications Workshop (UEM / POLIMI)</strong> <span style="color:#777;">Nov 2025</span><br>Specialized engineering track in Machine Learning and Deep Learning frameworks optimized for massive climate datasets.</li>
+        <li><strong>International Conference on HPC - SC23 (Denver, USA)</strong> <span style="color:#777;">Nov 2023</span><br>Speaker in the pre-workshop track addressing architectural challenges in deploying operational HPC environments in Mozambique.</li>
+        <li><strong>RNP Forum 2023 (Brasília, Brazil)</strong> <span style="color:#777;">Aug 2023</span><br>Collaborative tracking of global emerge ICT models and advanced research networking applications.</li>
+      </ul>
+    </section>
 
-</body>
-</html>
+    <!-- CERTIFICATES LINKS -->
+    <section id="certificates">
+      <h2>Certificates & Document Verification</h2>
+      <p>Click on any file to open the corresponding official verification document:</p>
+      <ul>
+        <li>📄 <a class="doc-link" href="Applied_Data_Science_Lab.pdf" target="_blank">Applied Data Science Lab — WorldQuant University (2026)</a></li>
+        <li>📄 <a class="doc-link" href="Huawei Mozambique ICT Government Staff Training 2025.pdf" target="_blank">ICT Government Staff Training — Huawei Mozambique (2025)</a></li>
+        <li>📄 <a class="doc-link" href="Big Data.pdf" target="_blank">Data Science / ML & DL — Big Data Africa School</a></li>
+        <li>📄 <a class="doc-link" href="TCP_IP.pdf" target="_blank">TCP/IP Architecture — Escola Superior de Redes</a></li>
+        <li>📄 <a class="doc-link" href="Linux.pdf" target="_blank">Linux Administration — Escola Superior de Redes</a></li>
+        <li>📄 <a class="doc-link" href="HPC.pdf" target="_blank">Practical Course in HPC — CHPC, South Africa</a></li>
+        <li>📄 <a class="doc-link" href="Astrophysics and Space Science.pdf" target="_blank">Astrophysics and Space Sciences — HartRAO</a></li>
+        <li>📄 <a class="doc-link" href="Linux & Python.pdf" target="_blank">Linux & Python Engineering Track — CHPC</a></li>
+        <li>📄 <a class="doc-link" href="B.Sc-UEM.pdf" target="_blank">B.Sc. Degree in Meteorology — UEM</a></li>
+        <li>📄 <a class="doc-link" href="Certificate_UEM.pdf" target="_blank">Certificate — UEM</a></li>
+        <li>📄 <a class="doc-link" href="Transcript_UEM.pdf" target="_blank">Academic Transcript — UEM</a></li>
+        <li>📄 <a class="doc-link" href="Transcript_UP.pdf" target="_blank">Academic Transcript — UPM (Pedagogical University)</a></li>
+        <li>📄 <a class="doc-link" href="Certificate of Attendace_Geophysics.pdf" target="_blank">Certificate of Attendance — Geophysics</a></li>
+      </ul>
+    </section>
+
+    <!-- CONTACT & CV DOWNLOAD -->
+    <section id="contact">
+      <h2>Contact & Connectivity</h2>
+      <div class="contact-info">
+        <p><strong>Email Account:</strong> <a href="mailto:martiliobanze@gmail.com">martiliobanze@gmail.com</a></p>
+        <p><strong>Mobile Verification:</strong> (+258) 844330181</p>
+        <p><strong>Primary Hub:</strong> Maputo City, Mozambique</p>
+        
+        <p style="margin-top: 25px; margin-bottom: 5px;"><strong>Curriculum Vitae Download Layer:</strong></p>
+        <div class="cv-container">
+          <a class="cv-btn" href="meu_curriculo_EN.pdf" target="_blank">🌍 Download CV (English Version)</a>
